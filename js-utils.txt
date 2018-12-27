@@ -1,0 +1,7 @@
+https://www.electron.build/
+https://jestjs.io/
+https://facebook.github.io/react-native/
+https://draftjs.org/
+https://facebook.github.io/create-react-app/
+https://reactjs.org/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
