@@ -1,0 +1,29 @@
+{
+  "name": "javascript-data-structure",
+  "version": "1.0.0",
+  "description": "자바스크립트에는 자체적으로 존재하지 않는 자료구조의 라이브러리를 만들고, 자료구조를 시각화 할 수 있는 프로그램을 만들어본다.",
+  "main": "index.js",
+  "scripts": { 
+    "make-test": "./node_modules/.bin/babel src --out-dir lib"
+   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://SeungKiLeeCS:Lesdekheel1@github.com/SeungKiLeeCS/Javascript-Data-Structure.git"
+  },
+  "author": "Seung Ki Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeungKiLeeCS/Javascript-Data-Structure/issues"
+  },
+  "homepage": "https://github.com/SeungKiLeeCS/Javascript-Data-Structure#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "expect.js": "^0.3.1",
+    "mocha": "^5.2.0"
+  }
+}
