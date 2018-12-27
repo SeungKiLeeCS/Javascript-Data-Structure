@@ -4,7 +4,7 @@
   "description": "자바스크립트에는 자체적으로 존재하지 않는 자료구조의 라이브러리를 만들고, 자료구조를 시각화 할 수 있는 프로그램을 만들어본다.",
   "main": "index.js",
   "scripts": { 
-    "make-test": "./node_modules/.bin/babel src --out-dir lib"
+    "lib": "./node_modules/.bin/babel datastructure --out-dir lib"
    },
   "repository": {
     "type": "git",
