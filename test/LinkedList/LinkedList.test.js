@@ -1,4 +1,4 @@
-import LinkedList from '../LinkedList';
+import LinkedList from '../../datastructure/LinkedList/LinikedList';
 
 var expect = require('expect.js');
 
