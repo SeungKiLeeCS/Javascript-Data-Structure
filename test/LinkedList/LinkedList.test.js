@@ -1,6 +1,6 @@
 import LinkedList from '../../datastructure/LinkedList/LinikedList';
 
-var expect = require('expect.js');
+const expect = require('chai').expect;
 
 describe('Linked List', () => {
 

@@ -1,6 +1,6 @@
 import ListNode from '../../datastructure/LinkedList/ListNode';
 
-var expect = require('expect.js');
+const expect = require('chai').expect;
 
 describe('List Node', () => {
     // Happy Path

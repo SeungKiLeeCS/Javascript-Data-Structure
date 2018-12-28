@@ -1,3 +1,3 @@
 import TreeNode from '../../datastructure/TreeNode/TreeNode';
 
-var expect = require('expect.js');
+const expect = require('chai').expect;

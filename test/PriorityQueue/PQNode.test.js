@@ -1,6 +1,6 @@
 import PQNode from '../../datastructure/PQNode/PQNode';
 
-var expect = require('expect.js');
+const expect = require('chai').expect;
 
 describe('Priority Queue Node', () => {
     it('should be created correctly', () => {

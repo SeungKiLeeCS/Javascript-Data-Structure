@@ -1,3 +1,3 @@
 import Heap from '../../datastructure/Heap/Heap';
 
-var expect = require('expect.js');
+const expect = require('chai').expect;
