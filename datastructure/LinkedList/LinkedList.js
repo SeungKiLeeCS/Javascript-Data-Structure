@@ -6,13 +6,13 @@ export default class LinkedList {
     // Keep both head and tail for insertion/removal efficiency
     constructor() {
         this.head = null
-        this.tail = null    
+        this.tail = null
         this.size = 0
     }
 
     append(val) {
         const node = new ListNode(val);
-        
+
         if (this.head == null) {
             this.head = this.tail = node;
         } else {
@@ -31,7 +31,7 @@ export default class LinkedList {
     remove(val) {
         let index = this.head;
 
-        while(index != null) {
+        while (index != null) {
             if (index.val == val) {
                 index.prev.next = index.next;
                 index.next.prev = index.prev;
@@ -41,6 +41,12 @@ export default class LinkedList {
 
             index = index.next;
         }
+    }
+
+    removeTail() {
+        this.tail.prev.next = null;
+        this.size -= 1;
+        return this;
     }
 
     prepend(val) {
@@ -66,7 +72,7 @@ export default class LinkedList {
         if (this.head == null) {
             this.head = this.tail = node;
         } else {
-            if (this.size - loc > this.size/2) {
+            if (this.size - loc > this.size / 2) {
                 let index = this.head;
                 for (i = 0; i < loc; i++) {
                     index = index.next;
@@ -88,7 +94,7 @@ export default class LinkedList {
     }
 
     print() {
-        index = this.head;
+        let index = this.head;
         while (index != null) {
             console.log(index.val);
             index = index.next;
@@ -96,7 +102,7 @@ export default class LinkedList {
     }
 
     printReverse() {
-        index = this.tail;
+        let index = this.tail;
         while (index != null) {
             console.log(index.val);
             index = index.prev;
@@ -106,7 +112,7 @@ export default class LinkedList {
     // Reverse a linked list.
     // keep prev -> set prev to next -> set next to prev -> move to prev (that was next)
     reverseList() {
-        index = this.head;
+        let index = this.head;
         prevHolder = null;
         while (index != null) {
             prevHolder = index.prev;
@@ -119,12 +125,30 @@ export default class LinkedList {
     }
 
     findAt(loc) {
-        index = this.head;
+        let index = this.head;
         for (i = 0; i < loc; i++) {
             index = index.next;
         }
 
         return index.val;
+    }
+
+    isEmpty() {
+        return !this.head;
+    }
+
+    asArray() {
+        let index = this.head;
+        let counter = 0;
+        let retArray = [];
+
+        while (counter < this.size) {
+            retArray.push(index.val);
+            index = index.next;
+            counter += 1;
+        }
+
+        return retArray;
     }
 
 }

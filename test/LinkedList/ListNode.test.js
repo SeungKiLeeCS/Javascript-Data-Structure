@@ -1,4 +1,4 @@
-import ListNode from '../ListNode';
+import ListNode from '../../datastructure/LinkedList/ListNode';
 
 var expect = require('expect.js');
 
@@ -11,5 +11,5 @@ describe('List Node', () => {
         expect(node.prev).to.be(null);
         expect(node.next).to.be(node.prev);
     });
-    
+
 });
