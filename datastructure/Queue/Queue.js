@@ -11,8 +11,9 @@ export default class Queue extends LinkedList {
     }
 
     pop() {
+        let temp = this.peek();
         this.remove(this.head.val);
-        this.peek();
+        return temp;
     }
 
     peek() {
