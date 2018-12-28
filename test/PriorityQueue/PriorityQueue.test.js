@@ -1,6 +1,6 @@
 import PriorityQueue from '../../datastructure/PriorityQueue/PriorityQueue';
 
-var expect = require('expect.js');
+const expect = require('chai').expect;
 
 describe('Priority Queue', () => {
     it('should be created empty', () => {

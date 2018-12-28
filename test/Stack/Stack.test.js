@@ -1,6 +1,6 @@
 import Stack from '../../datastructure/Stack/Stack';
 
-var expect = require('expect.js');
+const expect = require('chai').expect;
 
 describe('Stack', () => {
     it('should correctly inherit Linked List', () => {

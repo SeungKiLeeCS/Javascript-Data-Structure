@@ -1,6 +1,6 @@
 import Queue from '../../datastructure/Queue/Queue';
 
-var expect = require('expect.js');
+const expect = require('chai').expect;
 
 describe('Queue', () => {
     it('should correctly inherit Linked List', () => {

@@ -1,6 +1,6 @@
 import Deque from '../../datastructure/Deque/Deque';
 
-var expect = require('expect.js');
+const expect = require('chai').expect;
 
 describe('Deque', () => {
     it('should inject correctly', () => {
