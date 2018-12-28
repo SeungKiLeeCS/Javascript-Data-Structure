@@ -11,8 +11,9 @@ export default class Stack extends LinkedList {
     }
 
     pop() {
+        let temp = this.peek();
         this.removeTail();
-        this.peek();
+        return temp;
     }
 
     peek() {

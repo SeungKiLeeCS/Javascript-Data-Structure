@@ -84,11 +84,12 @@ export default class LinkedList {
                 }
             }
             const node = new ListNode(val);
-            node.prev.next = index;
+            index.next.prev = node;
             node.next = index.next;
             index.next = node;
-            this.size += 1;
+            node.prev = index;
         }
+        this.size += 1;
 
         return this;
     }
@@ -149,6 +150,10 @@ export default class LinkedList {
         }
 
         return retArray;
+    }
+
+    length() {
+        return this.size;
     }
 
 }
